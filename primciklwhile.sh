@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "check"
+echo "скрипт который что то делает"
 a=1
 while [ $a -le 100 ]; do
 echo "текущее а" $a  
