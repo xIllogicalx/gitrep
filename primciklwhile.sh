@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "check"
 a=1
 while [ $a -le 100 ]; do
 echo "текущее а" $a  
