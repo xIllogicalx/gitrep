@@ -9,7 +9,7 @@ source hall-env/bin/activate
 # git@github.com:xIllogicalx/gitrep.git
 =========================================================================
 показать файлы в папке
-find
+find /usr/share/doc/ -name "*.txt"
 # открыть файл по адресу
 file /home/main-user/direct/test-file.gif
 # создать папку
