@@ -10,6 +10,16 @@
 # print (("%.f" %perc_men),("%.f" %perc_women))
 
 # ---------------------------------------------------------------------
+# программа спрашивает доход за неделю по дням и показывает сумму
+# число_дней = 7
+# total = 0.0
+# for r in range (число_дней):
+#     print("введите доход за ", r +1, "день",end="")
+#     score=float(input(": "))
+#     total+= score
+# print (list,total)
+
+# ---------------------------------------------------------------------
 
 # калькулятор хотдогов для пикника с остатком
 # кол_во_людей = int(input("enter amount people: "))
@@ -598,3 +608,110 @@
 #         print(f.readline())
 
 # ---------------------------------------------------------------------
+
+# запрос у пользователя ккой файл открыть и прказывает 5 строк из файла
+# file_name=input("назовите файл который надо открыть")
+# if input == file_name:
+#     with open(file_name, 'r') as f:
+#         for i in range(5):
+#             print(f.readline())
+
+# ---------------------------------------------------------------------
+
+# нумерует строки в файле
+# lines = 0
+# file = open ("numbers.txt", 'r')
+# for line in file:
+#     lines +=1
+#     print (lines,":", line)
+
+# ---------------------------------------------------------------------
+
+# читает текст из файла используя with
+# with open ('names.txt') as s:
+#     text = s.read()
+#     print(text)
+
+# читает текст из файла используя redline    
+# file1 = open("names.txt", "r")
+# while True:
+#     # считываем строку
+#     line = file1.readline()
+#     # прерываем цикл, если строка пустая
+#     if not line:
+#         break
+#     # выводим строку
+#     print(line.strip())
+# # закрываем файл
+# file1.close
+
+# читает текст из файла используя readlines
+# # получим объект файла
+# file1 = open("sample.txt", "r")
+# # считываем все строки
+# lines = file1.readlines()
+# # итерация по строкам
+# for line in lines:
+#     print(line.strip())
+# # закрываем файл
+# file1.close
+
+# ---------------------------------------------------------------------
+
+# спрашивает кол-во случайных чисел, записывает их в файл, 
+# считает их сумму и показывает на экране
+# def main():
+#     import random
+#     outfile = open("random_numbers.txt", "w")
+#     number = int(input("enter number for random: "))
+#     for count in range (number):
+#         number=random.randint (1,500)
+#         outfile.write(str(number)+ '\n')
+#     outfile.close()
+#     with open ("random_numbers.txt") as s:
+#         text = s.read()
+#         print(text)
+#     outfile = open ("random_numbers.txt", "r")
+#     total=0
+#     count=0
+#     for line in outfile:
+#         line = float(line)
+#         count+=1
+#         total+=line
+#     outfile.close    
+#     print ('сумма их будет равна: ',total)
+# main()
+
+# ---------------------------------------------------------------------
+
+# делает список из вводимых пользователем в цифр
+# a = list(map(int,input().split()))
+# print (a)
+
+# ---------------------------------------------------------------------
+
+# делает список из вводимых пользователем в цифр выводит сумму,min,maxи среднюю
+# print('Вводите значения цен, нажимайте enter')
+# print(' для окончания ввода просто нажмите enter')
+
+# a = int(input('-->> '))
+# rices = []
+# while True:
+#     try:
+#         rices.append(a)
+#         a = int(input('-->> '))
+#     except:
+#         break
+# b=sum(rices)
+# c=min(rices)
+# d=max(rices)
+# e=b/len(rices)
+# print(rices,b,c,d,e)
+
+# ---------------------------------------------------------------------
+
+# открывает файл и показывает в виде списка содержимое
+# l = []
+# with open('charge_accounts.txt') as f:
+#     l = f.read().splitlines()
+#     print (l)
